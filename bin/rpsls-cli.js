@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import { rpsls } from "../lib/rpsls.js";
 import minimist from "minimist";
 var arg = minimist(process.argv.slice(2));
@@ -16,7 +17,7 @@ try{
 catch (error){
     if(error instanceof RangeError)
     {
-        console.error('${args._[0] is out of range');
+        console.error('${args._[0]} is out of range');
         rules();
         help();
     }
