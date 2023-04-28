@@ -18,6 +18,7 @@
   "bin": {
     "node-rps":"./bin/rps-cli.js"
      "node-rpsls":"./bin/rpsls-cli.js"
+  },  
   "author": "karthike-05",
   "license": "MIT",
   "bugs": {
