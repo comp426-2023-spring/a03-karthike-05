@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a03-karthike-05/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a03-karthike-05#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a03-karthike-05#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
 }
