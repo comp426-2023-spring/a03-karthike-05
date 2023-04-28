@@ -17,6 +17,7 @@ if(arg.rules || arg.r)
 
 try{
     console.log(JSON.stringify(rps(arg._[0])));
+    process.exit(0);
 }
 catch (error){
     if(error  instanceof RangeError)
@@ -26,10 +27,6 @@ catch (error){
         rules();
     }
 }
-
-
-
-
 
 
 function(help)
