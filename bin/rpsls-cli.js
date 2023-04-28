@@ -22,7 +22,7 @@ catch (error){
     }
 }
 
-function(help)
+function help()
 {
     console.log(
         'Usage: node-rpsls [SHOT]
@@ -40,7 +40,7 @@ function(help)
     process.exit(0);
 }
 
-function(rules)
+function rules()
 {
     console.log(
         'Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
