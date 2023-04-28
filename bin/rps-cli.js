@@ -2,7 +2,7 @@
 
 import { rps } from "../lib/rpsls.js";
 import minimist from "minimist";
-var arg = minimist(process.arg.slice(2));
+var arg = minimist(process.argv.slice(2));
 
 //Help Documentation
 if(arg.help || arg.h)
