@@ -1,5 +1,5 @@
 {
-  "name": "node-rpsl",
+  "name": "node-rpsls",
   "version": "1.0.0",
   "description": "Assignment3",
   "main": "./lib/rpsls.js",
