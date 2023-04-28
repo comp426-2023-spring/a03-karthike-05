@@ -23,8 +23,8 @@ catch (error){
     if(error  instanceof RangeError)
     {
         console.error('${args._[0] is out of range');
-        help();
         rules();
+        help();
     }
 }
 
