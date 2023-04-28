@@ -16,7 +16,7 @@
     "Node"
   ],
   "bin": {
-    "node-rps": "./bin/rps-cli.js",
+   "node-rps": "./bin/rps-cli.js",
     "node-rpsls": "./bin/rpsls-cli.js"
   },
   "dependencies": {
