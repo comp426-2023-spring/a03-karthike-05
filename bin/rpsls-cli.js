@@ -1,25 +1,30 @@
 #!/usr/bin/env node
 
-import { rpsls } from "../lib/rpsls.js";
 import minimist from "minimist";
-var arg = minimist(process.argv.slice(2));
+import { rpsls } from '../lib/rpsls.js';
+const arg = minimist(process.argv.slice(2));
 
-//Help Documentation
 if(arg.help || arg.h)
-{    help(); }
+{
+    help();
+}
+
 if(arg.rules || arg.r)
-{    rules(); }
+{
+    rules();
+}
 
 try{
     console.log(JSON.stringify(rps(arg._[0])));
     process.exit(0);
 }
 catch (error){
-    if(error instanceof RangeError)
+    if(error  instanceof RangeError)
     {
         console.error('${args._[0]} is out of range');
         rules();
         help();
+        process.exit(1);
     }
 }
 
