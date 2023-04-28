@@ -15,13 +15,13 @@ if(arg.rules || arg.r)
 }
 
 try{
-    console.log(JSON.stringify(rps(arg._[0])));
+    console.log(JSON.stringify(rpsls(arg._[0])));
     process.exit(0);
 }
 catch (error){
     if(error  instanceof RangeError)
     {
-        console.error('${args._[0]} is out of range');
+        console.error('${arg._[0]} is out of range');
         rules();
         help();
         process.exit(1);
